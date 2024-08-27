@@ -1,0 +1,240 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global Styles */
+body {
+    color: #2c3e50;
+    height: 100vh;
+    background-image: url('public/pexels-pixabay-267885.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Top Heading */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+/* Container and Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Body and Background */
+body {
+    color: white;
+    height: 100vh;
+    background-image: url('public/pexels-pixabay-267885.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgb(243, 207, 5);
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(255, 220, 20);
+    border-radius: 4px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar.show {
+    right: 0;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.sidebar a {
+    width: 100%;
+    text-align: left;
+}
+
+/* Mobile Menu Button */
+.menu-button {
+    display: none;
+}
+
+/* Media Queries */
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+
+/* FAQ Section */
+.faq-section {
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.accordion {
+    background-color: #34495e;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.3rem;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.accordion:hover {
+    background-color: #2c3e50;
+    transform: scale(1.02);
+}
+
+.accordion.active {
+    background-color: #1abc9c;
+}
+
+.panel {
+    padding: 20px;
+    background-color: #ecf0f1;
+    display: none;
+    overflow: hidden;
+    color: #34495e;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #bdc3c7;
+    font-size: 1.1rem;
+}
+
+.panel p {
+    margin: 0;
+}
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .mail {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mail img {
+    margin-right: 10px;
+}

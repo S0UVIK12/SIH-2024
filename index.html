@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PMSSS</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="main-nav">
+          <li class="logo">
+            <a href="index.html">
+              <img src="public/logo-new-1@2x.png" alt="Homepage" />
+            </a>
+          </li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="hideOnMobile">
+            <a href="#" class="admin">
+              <img src="public/user-business.svg" alt="Administrator" />
+              Administration Login
+            </a>
+          </li>
+          <li class="hideOnMobile"><a href="#">Application Login</a></li>
+          <li class="hideOnMobile"><a href="#">Registration</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#5f6368"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#5f6368"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#" class="admin">
+              <img src="public/user-business.svg" alt="Administrator" />
+              Administration Login
+            </a>
+          </li>
+          <li><a href="#">Application Login</a></li>
+          <li><a href="#">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="content-text">
+            <h1>Prime Minister's Special Scholarship Scheme</h1>
+            <p>
+              Prime Minister's Special Scholarship Scheme (PMSSS) is a scholarship
+              scheme that was launched in 2011-12. The scheme is aimed at providing
+              financial assistance to pursue higher education. The scheme is funded
+              by the Ministry of Human Resource Development, Government of India.
+              The scheme is implemented by the All India Council for Technical
+              Education (AICTE).
+            </p>
+            <p>
+              The scheme is open to students who have passed the Class 12
+              examination. The students who are eligible for the scheme can apply
+              for the scholarship through the online portal of the AICTE. The
+              scholarship is awarded to the students on the basis of their
+              performance in the qualifying examination and the entrance examination
+              conducted by the AICTE.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+          <button class="accordion">What is the Prime Minister's Special Scholarship Scheme?</button>
+          <div class="panel">
+            <p>
+              The Prime Minister's Special Scholarship Scheme (PMSSS) is a scheme
+              aimed at providing financial assistance to students from specific
+              regions in India to pursue higher education. The scholarship is
+              awarded based on performance in qualifying exams and entrance exams.
+            </p>
+          </div>
+    
+          <button class="accordion">Who is eligible for PMSSS?</button>
+          <div class="panel">
+            <p>
+              Students who have passed the Class 12 examination from recognized
+              schools or institutions in specific regions of India are eligible for
+              PMSSS. Eligibility is also based on family income and other criteria.
+            </p>
+          </div>
+    
+          <button class="accordion">How can I apply for PMSSS?</button>
+          <div class="panel">
+            <p>
+              Eligible students can apply for PMSSS through the AICTE online portal.
+              The application process involves filling out necessary details,
+              submitting required documents, and appearing for entrance exams if
+              applicable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+    <footer>
+      <div class="footer">
+        <div class="copy">copyright &copy; 2024-2025</div>
+        <div class="mail">
+          <img src="public/email.svg" />
+          PMSSS2024@hmail.com
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
